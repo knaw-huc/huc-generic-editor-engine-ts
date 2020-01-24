@@ -12,7 +12,7 @@ For a standalone-version without server: consult and test standalone.html
 
 <head>
     <meta charset="UTF-8">
-    <title>Huc Editor TypeScript</title>
+    <title>Huc Editor Engine TypeScript</title>
     <link href="css/ccfstyle.css" rel="stylesheet"> 
     <!-- for the typescript version -->
     <script src="js/lib/jquery-3.2.1.min.js"></script>
@@ -21,13 +21,18 @@ For a standalone-version without server: consult and test standalone.html
     <!-- <script src="js/src/config/ccf_config_nl.js"></script> in global space so vars not nice but import not working without js bundlers-->
     <script src="js/src/config/ccf_config_en.js"></script>
     <script src="js/src/ccfparser.js"></script>
+    <script src="js/src/ccfparser_orig.js"></script>
+
     <script>
             let serverurl = "http://localhost:8888/server.php";
             fetch(serverurl).then(function (response) {
             response.json().then(function (json) {
                 $('document').ready(function () {
-                    let fb = new FormBuilder(json, ccfOptions);
-                    // let ab = new FormBuilder(json, ccfOptions); // gek hoor...
+
+                    formBuilder.start(json);
+
+                    // let fb = new FormBuilder(json, ccfOptions);
+                    console.log('start')
  
                 });
 
@@ -38,7 +43,7 @@ For a standalone-version without server: consult and test standalone.html
 
 </head>
 <body>
-    <h1>Huc Editors TypeScript</h1>
+    <h1>Huc Editor Engine TypeScript</h1>
     <div id="ccform"></div>
 </body>
 

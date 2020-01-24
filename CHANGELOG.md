@@ -1,3 +1,7 @@
+### 24-1-2010
+
+* tried to fix, duplicate bug, no succes yet...
+
 ### 17-1-2020
 
 * made a seperate repository for the TypeScript version

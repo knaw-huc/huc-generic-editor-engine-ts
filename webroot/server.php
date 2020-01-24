@@ -6,6 +6,8 @@
 
 
 $file = file_get_contents("json_examples/devdata.json");
+// $file = file_get_contents("json_examples/test.json");
+
 
 header('Content-Type: application/json');
 header("Access-Control-Allow-Origin: *");

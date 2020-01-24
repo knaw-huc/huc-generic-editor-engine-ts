@@ -1,0 +1,931 @@
+{
+    "id": "clarin.eu:cr1:p_1440426460262",
+    "content": [
+        {
+            "type": "Component",
+            "level": 1,
+            "ID": "5e295a583f83a",
+            "attributes": {
+                "name": "MeertensCollection",
+                "label": "Meertens collectie",
+                "CardinalityMin": "1",
+                "CardinalityMax": "1",
+                "initialOrder": 1
+            },
+            "content": [
+                {
+                    "type": "Component",
+                    "level": 2,
+                    "ID": "5e295a583f854",
+                    "attributes": {
+                        "name": "CoreCollectionInformation",
+                        "label": "Core-collectie informatie",
+                        "CardinalityMin": "1",
+                        "CardinalityMax": "1",
+                        "initialOrder": 1
+                    },
+                    "content": [
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840af8",
+                            "attributes": {
+                                "name": "collectionID",
+                                "label": "Collectie ID",
+                                "ValueScheme": "int",
+                                "CardinalityMin": "1",
+                                "CardinalityMax": "1",
+                                "displayOrder": "1",
+                                "initialOrder": 22
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a583f887",
+                            "attributes": {
+                                "name": "title",
+                                "label": "Titel",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "1",
+                                "CardinalityMax": "1",
+                                "Multilingual": "true",
+                                "duplicate": "yes",
+                                "displayOrder": "2",
+                                "initialOrder": 2
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a583f874",
+                            "attributes": {
+                                "name": "creator",
+                                "label": "Auteur",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "false",
+                                "initialOrder": 1
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a583f89a",
+                            "attributes": {
+                                "name": "description",
+                                "label": "Beschrijving",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "1",
+                                "CardinalityMax": "1",
+                                "Multilingual": "true",
+                                "duplicate": "yes",
+                                "height": "8",
+                                "width": "60",
+                                "initialOrder": 3,
+                                "inputField": "multiple"
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a583f8ad",
+                            "attributes": {
+                                "name": "created",
+                                "label": "Aangemaakt op",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "1",
+                                "Multilingual": "true",
+                                "duplicate": "yes",
+                                "autoValue": {
+                                    "type": "function",
+                                    "value": "2020-01-23"
+                                },
+                                "initialOrder": 4
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840967",
+                            "attributes": {
+                                "name": "rights",
+                                "label": "Rechten",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "ValueScheme": [
+                                    [
+                                        {
+                                            "value": "Open Access Creative Commons Zero Waiver"
+                                        },
+                                        {
+                                            "value": "Open Access"
+                                        },
+                                        {
+                                            "value": "Restricted Access"
+                                        },
+                                        {
+                                            "value": "Other Access"
+                                        }
+                                    ]
+                                ],
+                                "initialOrder": 5
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a58409d1",
+                            "attributes": {
+                                "name": "rightsInfo",
+                                "label": "Rechteninformatie",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 6
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a58409e2",
+                            "attributes": {
+                                "name": "embargo",
+                                "label": "Embargo",
+                                "ValueScheme": "date",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "1",
+                                "initialOrder": 7
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a58409f2",
+                            "attributes": {
+                                "name": "audience",
+                                "label": "Doelgroep",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 8
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a10",
+                            "attributes": {
+                                "name": "contributor",
+                                "label": "Medewerker",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 9
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a21",
+                            "attributes": {
+                                "name": "subject",
+                                "label": "Onderwerp",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 10
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a36",
+                            "attributes": {
+                                "name": "spatial",
+                                "label": "Ruimte",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 11
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a47",
+                            "attributes": {
+                                "name": "temporal",
+                                "label": "Tijd",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 12
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a57",
+                            "attributes": {
+                                "name": "source",
+                                "label": "Bron",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 13
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a6b",
+                            "attributes": {
+                                "name": "identifier",
+                                "label": "Identifier",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 14
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a86",
+                            "attributes": {
+                                "name": "format",
+                                "label": "Formaat",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 15
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840a96",
+                            "attributes": {
+                                "name": "relation",
+                                "label": "Relatie",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 16
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840aa6",
+                            "attributes": {
+                                "name": "language",
+                                "label": "Taal",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "autoCompleteURI": "https:\/\/vocabularies.clarin.eu\/clavas\/public\/api\/autocomplete\/",
+                                "initialOrder": 17
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840ab7",
+                            "attributes": {
+                                "name": "remarks",
+                                "label": "Opmerkingen",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 18
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840aca",
+                            "attributes": {
+                                "name": "publisher",
+                                "label": "Uitgever",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 19
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840ada",
+                            "attributes": {
+                                "name": "type",
+                                "label": "type",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 20
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840ae9",
+                            "attributes": {
+                                "name": "rightsHolder",
+                                "label": "Rechthebbende",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 21
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b08",
+                            "attributes": {
+                                "name": "extent",
+                                "label": "Omvang",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 23
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b18",
+                            "attributes": {
+                                "name": "project",
+                                "label": "project",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 24
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b26",
+                            "attributes": {
+                                "name": "projectStatus",
+                                "label": "Project status",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 25
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b36",
+                            "attributes": {
+                                "name": "physicalCondition",
+                                "label": "Fysieke conditie",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 26
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b45",
+                            "attributes": {
+                                "name": "legalStatus",
+                                "label": "Wettelijke status",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 27
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b54",
+                            "attributes": {
+                                "name": "typeOfMaterial",
+                                "label": "Materiaalsoort",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 28
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b64",
+                            "attributes": {
+                                "name": "conservation",
+                                "label": "Conservering",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 29
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b73",
+                            "attributes": {
+                                "name": "restoration",
+                                "label": "Restauratie",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 30
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b86",
+                            "attributes": {
+                                "name": "digitalFiles",
+                                "label": "Digitale bestanden",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 31
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840b96",
+                            "attributes": {
+                                "name": "furtherAccessibilityDesired",
+                                "label": "Verdere toegang",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 32
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840ba6",
+                            "attributes": {
+                                "name": "provenance",
+                                "label": "Herkomst",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "hide": "yes",
+                                "autoValue": {
+                                    "type": "default",
+                                    "value": "Meertens Instituut"
+                                },
+                                "initialOrder": 33
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840bbb",
+                            "attributes": {
+                                "name": "shortTitle",
+                                "label": "Titel kort",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "Multilingual": "true",
+                                "initialOrder": 34
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840bcb",
+                            "attributes": {
+                                "name": "storageLocation",
+                                "label": "Opslaglocatie",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "1",
+                                "Multilingual": "true",
+                                "duplicate": "yes",
+                                "initialOrder": 35
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840bde",
+                            "attributes": {
+                                "name": "web",
+                                "label": "web",
+                                "ValueScheme": "boolean",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "1",
+                                "initialOrder": 36
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840bec",
+                            "attributes": {
+                                "name": "category",
+                                "label": "Categorie",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "1",
+                                "ValueScheme": [
+                                    [
+                                        {
+                                            "label": "MI Algemeen",
+                                            "value": "MI General"
+                                        },
+                                        {
+                                            "label": "Dialectologie\/taalvariatie",
+                                            "value": "Dialectology\/language variation"
+                                        },
+                                        {
+                                            "label": "Etnologie",
+                                            "value": "Ethnology"
+                                        },
+                                        {
+                                            "label": "Etnologie: Lied",
+                                            "value": "Ethnology: Dutch song"
+                                        },
+                                        {
+                                            "label": "Naamkunde",
+                                            "value": "Onomastics"
+                                        },
+                                        {
+                                            "label": "Bibliotheek",
+                                            "value": "Library"
+                                        },
+                                        {
+                                            "value": "Realia",
+                                            "label": "Realia"
+                                        }
+                                    ]
+                                ],
+                                "initialOrder": 37
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840c12",
+                            "attributes": {
+                                "name": "subcategory",
+                                "label": "Subcategorie",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "1",
+                                "ValueScheme": [
+                                    [
+                                        {
+                                            "label": "Algemeen",
+                                            "value": "General"
+                                        },
+                                        {
+                                            "label": "Comit\u00e9's",
+                                            "value": "Committees"
+                                        },
+                                        {
+                                            "label": "Subcomit\u00e9's",
+                                            "value": "Subcommittees"
+                                        },
+                                        {
+                                            "label": "Onderzoeksprojecten",
+                                            "value": "Research projects"
+                                        },
+                                        {
+                                            "label": "Automatisering",
+                                            "value": "Automation"
+                                        },
+                                        {
+                                            "label": "Financi\u00eble administratie",
+                                            "value": "Financial administration"
+                                        },
+                                        {
+                                            "label": "Staf",
+                                            "value": "Staff"
+                                        },
+                                        {
+                                            "label": "Projecten",
+                                            "value": "Projects"
+                                        },
+                                        {
+                                            "label": "Vragenlijsten",
+                                            "value": "Questionnaires"
+                                        },
+                                        {
+                                            "label": "Databases en kaartsystemen",
+                                            "value": "Databases and card-index systems"
+                                        },
+                                        {
+                                            "label": "Periodieken",
+                                            "value": "Periodicals"
+                                        },
+                                        {
+                                            "label": "Interne archieven en collecties",
+                                            "value": "Internal archives and collections"
+                                        },
+                                        {
+                                            "label": "Verworven archieven en collecties",
+                                            "value": "Externally acquired archives and collections"
+                                        },
+                                        {
+                                            "label": "Conferenties \/ symposia",
+                                            "value": "Conferences \/ symposia"
+                                        },
+                                        {
+                                            "label": "Commit\u00e9's divers",
+                                            "value": "Committees misc."
+                                        },
+                                        {
+                                            "value": "PR",
+                                            "label": "PR"
+                                        },
+                                        {
+                                            "label": "Informatievoorziening",
+                                            "value": "Provision of information"
+                                        }
+                                    ]
+                                ],
+                                "initialOrder": 38
+                            }
+                        },
+                        {
+                            "type": "Element",
+                            "level": 3,
+                            "ID": "5e295a5840c45",
+                            "attributes": {
+                                "name": "license",
+                                "label": "Licentie",
+                                "ValueScheme": "string",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "1",
+                                "Multilingual": "false",
+                                "initialOrder": 39
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "Component",
+                    "level": 2,
+                    "ID": "5e295a5840c6c",
+                    "attributes": {
+                        "name": "Inventory",
+                        "label": "Inhoud",
+                        "CardinalityMin": "0",
+                        "CardinalityMax": "1",
+                        "initialOrder": 2
+                    },
+                    "content": [
+                        {
+                            "type": "Component",
+                            "level": 3,
+                            "ID": "5e295a5840c7d",
+                            "attributes": {
+                                "name": "CoreResourceInformation",
+                                "label": "Informatie resource",
+                                "CardinalityMin": "0",
+                                "CardinalityMax": "unbounded",
+                                "duplicate": "yes",
+                                "resource": "all",
+                                "initialOrder": 1
+                            },
+                            "content": [
+                                {
+                                    "type": "Element",
+                                    "level": 4,
+                                    "ID": "5e295a5840c8f",
+                                    "attributes": {
+                                        "name": "inventoryId",
+                                        "label": "Inventaris ID",
+                                        "ValueScheme": "string",
+                                        "CardinalityMin": "1",
+                                        "CardinalityMax": "1",
+                                        "Multilingual": "false",
+                                        "initialOrder": 1
+                                    }
+                                },
+                                {
+                                    "type": "Element",
+                                    "level": 4,
+                                    "ID": "5e295a5840c9f",
+                                    "attributes": {
+                                        "name": "description",
+                                        "label": "Beschrijving",
+                                        "ValueScheme": "string",
+                                        "CardinalityMin": "1",
+                                        "CardinalityMax": "1",
+                                        "Multilingual": "true",
+                                        "duplicate": "yes",
+                                        "initialOrder": 2
+                                    }
+                                },
+                                {
+                                    "type": "Element",
+                                    "level": 4,
+                                    "ID": "5e295a5840caf",
+                                    "attributes": {
+                                        "name": "medium",
+                                        "label": "Medium",
+                                        "CardinalityMin": "0",
+                                        "CardinalityMax": "unbounded",
+                                        "duplicate": "yes",
+                                        "ValueScheme": [
+                                            [
+                                                {
+                                                    "value": "server"
+                                                },
+                                                {
+                                                    "value": "cdrom"
+                                                },
+                                                {
+                                                    "value": "memorystick"
+                                                },
+                                                {
+                                                    "value": "harddisc"
+                                                },
+                                                {
+                                                    "value": "dvd"
+                                                },
+                                                {
+                                                    "value": "diskette"
+                                                },
+                                                {
+                                                    "value": "hi8"
+                                                }
+                                            ]
+                                        ],
+                                        "initialOrder": 3
+                                    }
+                                },
+                                {
+                                    "type": "Element",
+                                    "level": 4,
+                                    "ID": "5e295a5840cc9",
+                                    "attributes": {
+                                        "name": "oldBoxNumber",
+                                        "label": "Doosnummer",
+                                        "ValueScheme": "string",
+                                        "CardinalityMin": "0",
+                                        "CardinalityMax": "1",
+                                        "Multilingual": "false",
+                                        "initialOrder": 4
+                                    }
+                                },
+                                {
+                                    "type": "Component",
+                                    "level": 4,
+                                    "ID": "5e295a5840cd9",
+                                    "attributes": {
+                                        "name": "TechnicalMetadata",
+                                        "label": "Technische metadata",
+                                        "CardinalityMin": "1",
+                                        "CardinalityMax": "1",
+                                        "initialOrder": 5
+                                    },
+                                    "content": [
+                                        {
+                                            "type": "Element",
+                                            "level": 5,
+                                            "ID": "5e295a5840cef",
+                                            "attributes": {
+                                                "name": "digital",
+                                                "label": "Digitaal",
+                                                "ValueScheme": "boolean",
+                                                "CardinalityMin": "1",
+                                                "CardinalityMax": "1",
+                                                "initialOrder": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Component",
+                                            "level": 5,
+                                            "ID": "5e295a5840cfe",
+                                            "attributes": {
+                                                "name": "Size",
+                                                "label": "Omvang",
+                                                "CardinalityMin": "0",
+                                                "CardinalityMax": "1",
+                                                "initialOrder": 2
+                                            },
+                                            "content": [
+                                                {
+                                                    "type": "Element",
+                                                    "level": 6,
+                                                    "ID": "5e295a5840d0e",
+                                                    "attributes": {
+                                                        "name": "number",
+                                                        "label": "Grootte",
+                                                        "ValueScheme": "decimal",
+                                                        "CardinalityMin": "1",
+                                                        "CardinalityMax": "1",
+                                                        "initialOrder": 1
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Element",
+                                                    "level": 6,
+                                                    "ID": "5e295a5840d1d",
+                                                    "attributes": {
+                                                        "name": "unit",
+                                                        "label": "Eenheid",
+                                                        "CardinalityMin": "1",
+                                                        "CardinalityMax": "1",
+                                                        "ValueScheme": [
+                                                            [
+                                                                {
+                                                                    "value": "KB"
+                                                                },
+                                                                {
+                                                                    "value": "MB"
+                                                                },
+                                                                {
+                                                                    "value": "GB"
+                                                                },
+                                                                {
+                                                                    "value": "TB"
+                                                                }
+                                                            ]
+                                                        ],
+                                                        "initialOrder": 2
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
