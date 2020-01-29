@@ -96,7 +96,7 @@ var formBuilder = {
                         attr_field.setAttribute('data-attribute_name', element.attributes.attributeList[key].name)
                         attr_field.setAttribute('placeholder', element.attributes.attributeList[key].name);
                         attr_field.setAttribute("class", "element_attribute");
-                    break;                            
+                        break;
                     // New Feature in development MvdP 
                     case 'dropDown':
                         // console.log(element.attributes.attributeList[key].values);
@@ -112,14 +112,15 @@ var formBuilder = {
                             var option = document.createElement('option');
                             option.setAttribute('value', element.attributes.attributeList[key].values[k]);
                             option.innerHTML = element.attributes.attributeList[key].values[k];
-                            attr_field.appendChild(option);    
-                        }        
-                    break;
+                            attr_field.appendChild(option);
+                        }
+                        break;
                 }
                 input.appendChild(attr_field);
             }
         }
         if (element.attributes.duplicate !== undefined) {
+
             var btn = document.createElement('input');
             btn.setAttribute('type', 'button');
             btn.setAttribute('value', '+');
@@ -128,8 +129,12 @@ var formBuilder = {
             btn.onclick =
                 function (e) {
                     console.log('add', tempID, element.attributes.name);
+                    console.log('dupliceerbaar', element.ID);
+
                     var elementname = element.attributes.name;
                     var next = clone.nextClonePostfix();
+                    console.log('next', next);
+
                     var that = $(this);
                     var tempID;
                     e.preventDefault();
@@ -141,7 +146,7 @@ var formBuilder = {
                             $(this).on("click", function (e) {
                                 console.log('remove', tempID);
 
-                                e.preventDefault();
+                                // e.preventDefault(); // slaat dat ergens op?
                                 var that = $(this);
                                 that.parent().remove();
                             });
@@ -169,14 +174,23 @@ var formBuilder = {
                             $(this).attr('id', "attr_" + $(this).attr("data-attribute_name") + "_" + tempID);
                             $(this).val("");
                         });
-                        // clonedElement.insertAfter(that.parent()); // the original
+                        console.log('clonedelement', clonedElement)
+                        console.log('thatparent', that.parent());  
+                    // clonedElement.insertAfter(that.parent()); // the original
 
-                    // clonedElement.insertAfter(that.parent().last()); // maakt niets uit
-                    // that.parent().after(function(){return clonedElement}); // werkt hetzelfde
-                    var selection = 'div[data-name=\'' + element.attributes.name + '\']' ;
+                    var selection = 'div[data-name=\'' + element.attributes.name + '\'] ' ;
+                    $(selection).last().append(clonedElement); // werkt lukt!
+
+                    // werkt niet
+                    // var selection = that.parent();
+                    // selection.last().append(clonedElement);
+                  
                     // console.log(selection);
                     // clonedElement.insertAfter($(selection).last()); // werkt ook hetzelfde
-                    $(selection).last().after(clonedElement); // werkt ook hetzelfde, dus niet beh
+                    // $(that.parent).last().append(clonedElement); // werkt ook hetzelfde, lukt!
+
+                    // clonedElement.append(that.parent().last());
+
                     createAutoCompletes();
                 };
             input.appendChild(btn);
@@ -968,7 +982,7 @@ function validateInput(key) {
         // Improved validation for attributes (MvdP)
         if (validationProfiles[key].attributes.attributeList !== undefined) {
             if (this.value !== "") {
-                var attribute_errorMsg = ''; 
+                var attribute_errorMsg = '';
                 for (var att in validationProfiles[key].attributes.attributeList) {
                     // console.log('att', att, validationProfiles[key].attributes.attributeList );
                     // console.log(validationProfiles[key].attributes.attributeList[att].Required );
@@ -1055,7 +1069,7 @@ function validateSelect(key) {
 
 function getInputType(element) {
     if (element.is("input")) { // .is is a jQuery method https://api.jquery.com/is/
-    
+
         // console.log('elementtest', element, )
         return "input";
     } else {

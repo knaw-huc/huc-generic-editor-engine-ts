@@ -21,7 +21,7 @@ For a standalone-version without server: consult and test standalone.html
     <!-- <script src="js/src/config/ccf_config_nl.js"></script> in global space so vars not nice but import not working without js bundlers-->
     <script src="js/src/config/ccf_config_en.js"></script>
     <script src="js/src/ccfparser.js"></script>
-    <script src="js/src/ccfparser_orig.js"></script>
+    <!-- <script src="js/src/ccfparser_orig.js"></script> -->
 
     <script>
             let serverurl = "http://localhost:8888/server.php";
@@ -29,9 +29,9 @@ For a standalone-version without server: consult and test standalone.html
             response.json().then(function (json) {
                 $('document').ready(function () {
 
-                    formBuilder.start(json);
+                    // formBuilder.start(json);
 
-                    // let fb = new FormBuilder(json, ccfOptions);
+                    let fb = new FormBuilder(json, ccfOptions);
                     console.log('start')
  
                 });

@@ -1,4 +1,8 @@
-### 24-1-2010
+### 29-1-2020
+
+* fixed duplicate bug
+
+### 24-1-2020
 
 * tried to fix, duplicate bug, no succes yet...
 
