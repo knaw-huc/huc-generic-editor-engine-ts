@@ -1,3 +1,7 @@
+## 25-3-2020
+
+* added Translatin.json file as an example
+
 ### 29-1-2020
 
 * fixed duplicate bug

@@ -4,9 +4,13 @@
 
 // uncomment the line below for a .json file with new features, in development
 
+// $file = file_get_contents("json_examples/voorbeeld.json");
 
-$file = file_get_contents("json_examples/devdata.json");
+// $file = file_get_contents("json_examples/devdata.json");
+$file = file_get_contents("json_examples/translatin.json");
+
 // $file = file_get_contents("json_examples/test.json");
+// $file = file_get_contents("json_examples/voorbeeld.json");
 
 
 header('Content-Type: application/json');

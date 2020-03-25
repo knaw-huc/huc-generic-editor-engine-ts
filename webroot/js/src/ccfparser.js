@@ -1,4 +1,5 @@
 "use strict";
+console.log('idioasdfasdfasdfts');
 var FormBuilder = /** @class */ (function () {
     function FormBuilder(obj, ccfOptions) {
         this.profileID = '';
@@ -168,10 +169,10 @@ var FormBuilder = /** @class */ (function () {
                         $(this).attr('id', "attr_" + $(this).attr("data-attribute_name") + "_" + tempID);
                         $(this).val("");
                     });
-                    // clonedElement.insertAfter(that.parent() as any); 
+                    clonedElement.insertAfter(that.parent());
                     // clonedElement.insertAfter(that.parent()); // the original
-                    var selection = 'div[data-name=\'' + element.attributes.name + '\'] ';
-                    $(selection).last().append(clonedElement); // werkt lukt! // ugly fix  for the any
+                    // let selection = 'div[data-name=\'' + element.attributes.name + '\'] ' ;
+                    // $(selection).last().append(clonedElement as any); // werkt lukt! // ugly fix  for the any
                     createAutoCompletes();
                 };
             input.appendChild(btn);

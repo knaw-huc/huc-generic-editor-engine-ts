@@ -1,6 +1,7 @@
 "use strict"
 
-
+console.log('idioasdfasdfasdfts');
+// alert('lul');
 interface json {
     id: string;
     content: [content];
@@ -218,12 +219,12 @@ class FormBuilder {
                             $(this).attr('id', "attr_" + $(this).attr("data-attribute_name") + "_" + tempID);
                             $(this).val("");
                         });
-                    // clonedElement.insertAfter(that.parent() as any); 
+                    clonedElement.insertAfter(that.parent() as any); 
 
                     // clonedElement.insertAfter(that.parent()); // the original
 
-                    let selection = 'div[data-name=\'' + element.attributes.name + '\'] ' ;
-                    $(selection).last().append(clonedElement as any); // werkt lukt! // ugly fix  for the any
+                    // let selection = 'div[data-name=\'' + element.attributes.name + '\'] ' ;
+                    // $(selection).last().append(clonedElement as any); // werkt lukt! // ugly fix  for the any
 
                     createAutoCompletes();
                 };

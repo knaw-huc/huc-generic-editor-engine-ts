@@ -1,0 +1,502 @@
+{
+    "id": "metadata/blub",
+    "content": [
+        {
+            "type": "Component",
+            "ID": "100",
+            "level": 1,
+            "attributes": {
+                "label": "Dramabase",
+                "CardinalityMin": "1",
+                "CardinalityMax": "1",
+                "name": "Dramabase"
+            },
+
+
+
+            "content": [
+                {
+                    "ID": "2",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                        "width": 60,
+                        "label": "Known title",
+                        "name": "drama_known_title",
+                        "ValueScheme": "string"
+                    }
+                },
+                {
+                    "ID": "3",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "width": 60,
+                        "height": 8,
+                        "inputField": "multiple",
+                        "label": "Brief summary",
+                        "name": "drama_brief_summary",
+                        "ValueScheme": "string"
+                    }
+                },
+                {
+                    "ID": "4",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "width": 60,
+                        "label": "Length in lines",
+                        "name": "drama_length_lines",
+                        "ValueScheme": "string"
+                    }
+                },
+                {
+                    "ID": "5",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "width": 60,
+                        "height": 8,
+                        "inputField": "multiple",
+                        "label": "Argumentum",
+                        "name": "drama_argumentum",
+                        "ValueScheme": "string"
+                    }
+                },
+                {
+                    "ID": "6",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "width": 60,
+                        "height": 4,
+                        "inputField": "multiple",
+                        "label": "Survey of acts and scenes",
+                        "name": "drama_act_scene_survey",
+                        "ValueScheme": "string"
+                    }
+                },
+                {
+                    "ID": "7",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "label": "genre",
+                        "name": "drama_genre",
+                        "CardinalityMax": "1",
+                        "ValueScheme": [
+                            [
+                                {
+                                    "label": "comedy",
+                                    "value": "comedy"
+                                },
+                                {
+                                    "label": "tragedy",
+                                    "value": "tragedy"
+                                },
+                                {
+                                    "label": "comicotragedy",
+                                    "value": "comicotragedy"
+                                },
+                                {
+                                    "label": "interlude",
+                                    "value": "interlude"
+                                },
+                                {
+                                    "label": "fabula",
+                                    "value": "fabula"
+                                }
+                            ]
+                        ],
+                        "initialOrder": 37
+                    }
+                },
+                {
+                    "ID": "8",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "label": "Text presence",
+                        "name": "drama-text-presence",
+                        "CardinalityMax": "1",
+                        "ValueScheme": [
+                            [
+                                {
+                                    "label": "None",
+                                    "value": "none"
+                                },
+                                {
+                                    "label": "Partly",
+                                    "value": "partly"
+                                },
+                                {
+                                    "label": "Full",
+                                    "value": "full"
+                                }
+                            ]
+                        ],
+                        "initialOrder": 37
+                    }
+                },
+                {
+                    "ID":"81",
+                    "level": 2,
+                    "type": "Component",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                        "label": "Extra Drama Element",
+                        "name": "extra_drama_element"
+                    },
+                    "content": [
+                        {
+                            "ID": "9",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Type",
+                                "name": "extra-drama-type",
+                                "ValueScheme": [
+                                    [
+                                        {
+                                            "label": "Chorus",
+                                            "value": "chorus"
+                                        },
+                                        {
+                                            "label": "Tableaux Vivant",
+                                            "value": "tableux vivant"
+                                        },
+                                        {
+                                            "label": "Music",
+                                            "value": "music"
+                                        }
+                                    ]
+                                ],
+                                "initialOrder": 37
+                            }
+                        },
+
+                        {
+                            "ID": "9",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Specification",
+                                "name": "extra-drama-specification",
+                                "inputField": "multiple",
+                                "ValueScheme": "string"
+                            }
+                        }
+                    ]
+                },
+
+
+
+
+                {
+                    "ID": "102",
+                    "level": 2,
+                    "type": "Component",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                        "label": "Author / Person",
+                        "name": "person"
+                    },
+                    "content": [
+                        {
+                            "ID": "9",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Name",
+                                "name": "person_name",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "10",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Alias for",
+                                "width": 60,
+                                "name": "person_alias",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "11",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Anonymous",
+                                "width": 60,
+                                "name": "person_anonymous",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "12",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "label": "Relation type",
+                                "width": 60,
+                                "name": "person_relationType",
+                                "ValueScheme": [
+                                    [
+                                        {
+                                            "label": "Author",
+                                            "value": "author"
+                                        },
+                                        {
+                                            "label": "Preface to",
+                                            "value": "preface_to"
+                                        },
+                                        {
+                                            "label": "Dedicated to",
+                                            "value": "dedicated_to"
+                                        },
+                                        {
+                                            "label": "Laudatory Poems by",
+                                            "value": "laudatory_poems_by"
+                                        }
+                                    ]
+                                ],
+                                "initialOrder": 37
+        
+                               
+                            }
+                        },
+                        {
+                            "ID": "13",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                             
+                                "label": "data ",
+                                "width": 60,
+                                "name": "person_data",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "14",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Professon ",
+                                "width": 60,
+                                "name": "person_profession",
+                                "ValueScheme": "string"
+                            }
+                        }
+                         
+                          
+                    ]
+                },
+ 
+                {
+                    "ID": "105",
+                    "level": 2,
+                    "type": "Component",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                
+                        "label": "Edition",
+                        "name": "edition"
+                    },
+                    "content": [
+                        {
+                            "ID": "15",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Order (1,2)",
+                                "width": 60,
+                                "name": "edition_order",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "16",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Page title",
+                                "width": 60,
+                                "name": "edition_page_title",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "17",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Elements after text",
+                                "width": 60,
+                                "height": 8,    
+                                "inputField": "multiple",
+
+                                "name": "edition_after_text",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "18",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Editor",
+                                "width": 60,
+                                "name": "edition_order",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "19",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Affiliation",
+                                "width": 60,
+                                "name": "edition_affiliation",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "20",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Date",
+                                "width": 60,
+                                "name": "edition_date",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "21",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Place",
+                                "width": 60,
+                                "name": "edition_place",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "22",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Publisher",
+                                "width": 60,
+                                "name": "edition_publisher",
+                                "ValueScheme": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ID": "5da6d8c6c5e3e",
+                    "level": 2,
+                    "type": "Component",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                        "CardinalityMax": "1",
+                        "label": "Provenance info",
+                        "name": "provenanceInfo"
+                    },
+                    "content": [
+                        {
+                            "ID": "5da6d8c6c5e48",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Title",
+                                "width": 50,
+                                "name": "title",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "5da6d8c6c5e8b",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Body",
+                                "width": 90,
+                                "height": 8,
+                                "inputField": "multiple",
+                                "name": "body",
+                                "ValueScheme": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ID": "5da6d8c6c5eff",
+                    "level": 2,
+                    "type": "Component",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                        "CardinalityMax": "1",
+                        "label": "License",
+                        "name": "license"
+                    },
+                    "content": [
+                        {
+                            "ID": "5da6d8c6c5f24",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "URI",
+                                "width": 100,
+                                "valueType": "string",
+                                "name": "uri",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "5da6d8c990011",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "0",
+                                "label": "Added field (not required)",
+                                "width": 10,
+                                "valueType": "string",
+                                "name": "uri",
+                                "ValueScheme": "string"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
