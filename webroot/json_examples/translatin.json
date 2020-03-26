@@ -117,6 +117,42 @@
                     }
                 },
                 {
+                    "ID": "17",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "label": "Language",
+                        "name": "drama_language",
+                        "CardinalityMax": "1",
+                        "ValueScheme": [
+                            [
+                                {
+                                    "label": "latin",
+                                    "value": "latin"
+                                },
+                                {
+                                    "label": "german",
+                                    "value": "german"
+                                },
+                                {
+                                    "label": "french",
+                                    "value": "french"
+                                },
+                                {
+                                    "label": "italian",
+                                    "value": "italian"
+                                },
+                                {
+                                    "label": "dutch",
+                                    "value": "dutch"
+                                }
+                            ]
+                        ],
+                        "initialOrder": 37,
+                        "duplicate": "True"
+                    }
+                },                
+                {
                     "ID": "8",
                     "level": 2,
                     "type": "Element",
@@ -226,10 +262,11 @@
                             "type": "Element",
                             "attributes": {
                                 "CardinalityMin": "0",
-                                "label": "Alias for",
+                                "label": "Alias",
                                 "width": 60,
                                 "name": "person_alias",
-                                "ValueScheme": "string"
+                                "ValueScheme": "string",
+                                "duplicate": "True"  
                             }
                         },
                         {
@@ -272,7 +309,8 @@
                                         }
                                     ]
                                 ],
-                                "initialOrder": 37
+                                "initialOrder": 37,
+                                "duplicate": "True"  
         
                                
                             }
@@ -294,7 +332,7 @@
                             "level": 3,
                             "type": "Element",
                             "attributes": {
-                                "CardinalityMin": "1",
+                                "CardinalityMin": "0",
                                 "label": "Professon ",
                                 "width": 60,
                                 "name": "person_profession",
@@ -347,13 +385,14 @@
                             "type": "Element",
                             "attributes": {
                                 "CardinalityMin": "0",
-                                "label": "Elements after text",
+                                "label": "Element after text",
                                 "width": 60,
                                 "height": 8,    
                                 "inputField": "multiple",
 
                                 "name": "edition_after_text",
-                                "ValueScheme": "string"
+                                "ValueScheme": "string",
+                                "duplicate" : "True"
                             }
                         },
                         {
@@ -417,85 +456,8 @@
                             }
                         }
                     ]
-                },
-                {
-                    "ID": "5da6d8c6c5e3e",
-                    "level": 2,
-                    "type": "Component",
-                    "attributes": {
-                        "CardinalityMin": "1",
-                        "CardinalityMax": "1",
-                        "label": "Provenance info",
-                        "name": "provenanceInfo"
-                    },
-                    "content": [
-                        {
-                            "ID": "5da6d8c6c5e48",
-                            "level": 3,
-                            "type": "Element",
-                            "attributes": {
-                                "CardinalityMin": "1",
-                                "label": "Title",
-                                "width": 50,
-                                "name": "title",
-                                "ValueScheme": "string"
-                            }
-                        },
-                        {
-                            "ID": "5da6d8c6c5e8b",
-                            "level": 3,
-                            "type": "Element",
-                            "attributes": {
-                                "CardinalityMin": "1",
-                                "label": "Body",
-                                "width": 90,
-                                "height": 8,
-                                "inputField": "multiple",
-                                "name": "body",
-                                "ValueScheme": "string"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "ID": "5da6d8c6c5eff",
-                    "level": 2,
-                    "type": "Component",
-                    "attributes": {
-                        "CardinalityMin": "1",
-                        "CardinalityMax": "1",
-                        "label": "License",
-                        "name": "license"
-                    },
-                    "content": [
-                        {
-                            "ID": "5da6d8c6c5f24",
-                            "level": 3,
-                            "type": "Element",
-                            "attributes": {
-                                "CardinalityMin": "1",
-                                "label": "URI",
-                                "width": 100,
-                                "valueType": "string",
-                                "name": "uri",
-                                "ValueScheme": "string"
-                            }
-                        },
-                        {
-                            "ID": "5da6d8c990011",
-                            "level": 3,
-                            "type": "Element",
-                            "attributes": {
-                                "CardinalityMin": "0",
-                                "label": "Added field (not required)",
-                                "width": 10,
-                                "valueType": "string",
-                                "name": "uri",
-                                "ValueScheme": "string"
-                            }
-                        }
-                    ]
                 }
+ 
             ]
         }
     ]

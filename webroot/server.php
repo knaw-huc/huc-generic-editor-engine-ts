@@ -11,6 +11,7 @@ $file = file_get_contents("json_examples/translatin.json");
 
 // $file = file_get_contents("json_examples/test.json");
 // $file = file_get_contents("json_examples/voorbeeld.json");
+// $file = file_get_contents("json_examples/smalltest.json");
 
 
 header('Content-Type: application/json');

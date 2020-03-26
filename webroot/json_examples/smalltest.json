@@ -1,0 +1,116 @@
+{
+    "id": "metadata/blub",
+    "content": [
+        {
+            "type": "Component",
+            "ID": "100",
+            "level": 1,
+            "attributes": {
+                "label": "Dramabase",
+                "CardinalityMin": "1",
+                "CardinalityMax": "1",
+                "name": "Dramabase"
+            },
+
+
+
+            "content": [
+                {
+                    "ID": "2",
+                    "level": 2,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                        "width": 60,
+                        "label": "Known title",
+                        "name": "drama_known_title",
+                        "ValueScheme": "string"
+                    }
+                },
+
+
+
+
+                {
+                    "ID": "102",
+                    "level": 2,
+                    "type": "Component",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                        "label": "Author / Person",
+                        "name": "person"
+                    },
+                    "content": [
+                        {
+                            "ID": "9",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Name",
+                                "name": "person_name",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "13",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                             
+                                "label": "data ",
+                                "width": 60,
+                                "name": "person_data",
+                                "ValueScheme": "string"
+                            }
+                        }
+                         
+                          
+                    ]
+                },
+ 
+                {
+                    "ID": "105",
+                    "level": 2,
+                    "type": "Component",
+                    "attributes": {
+                        "CardinalityMin": "1",
+                
+                        "label": "Edition",
+                        "name": "edition"
+                    },
+                    "content": [
+                        {
+                            "ID": "15",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Order (1,2)",
+                                "width": 60,
+                                "name": "edition_order",
+                                "ValueScheme": "string"
+                            }
+                        },
+                        {
+                            "ID": "16",
+                            "level": 3,
+                            "type": "Element",
+                            "attributes": {
+                                "CardinalityMin": "1",
+                                "label": "Page title",
+                                "width": 60,
+                                "name": "edition_page_title",
+                                "ValueScheme": "string"
+                            }
+                        }
+                    ]
+                }
+               
+                
+            ]
+
+            
+        }
+    ]
+}
