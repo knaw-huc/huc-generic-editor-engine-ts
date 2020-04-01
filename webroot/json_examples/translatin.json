@@ -80,7 +80,43 @@
           }
         },
 
-        
+        {
+            "ID": "91",
+            "level": 2,
+            "type": "Element",
+            "attributes": {
+              "label": "Metres",
+              "name": "metres_name",
+              "CardinalityMax": "1",
+              "ValueScheme": [
+                [
+                  {
+                    "label": "jambe",
+                    "value": "jambe"
+                  },
+                  {
+                    "label": "anapest",
+                    "value": "anapest"
+                  },
+                  {
+                    "label": "spondee",
+                    "value": "spondee"
+                  },
+                  {
+                    "label": "trocheus",
+                    "value": "trocheus"
+                  },
+                  {
+                    "label": "alexandrijn",
+                    "value": "alexandrijn"
+                  }
+                ]
+              ],
+              "duplicate": "True",
+
+              "initialOrder": 37
+            }
+          },
 
         {
           "ID": "7",
@@ -200,7 +236,7 @@
         
         
         {
-          "ID": "81",
+          "ID": "80",
           "level": 2,
           "type": "Component",
           "attributes": {
@@ -210,7 +246,7 @@
           },
           "content": [
             {
-              "ID": "9",
+              "ID": "81",
               "level": 3,
               "type": "Element",
               "attributes": {
@@ -237,7 +273,7 @@
               }
             },
             {
-              "ID": "9",
+              "ID": "82",
               "level": 3,
               "type": "Element",
               "attributes": {
@@ -292,6 +328,53 @@
           ]
         },
 
+        {
+            "ID": "150",
+            "level": 2,
+            "type": "Component",
+            "attributes": {
+              "CardinalityMin": "1",
+              "label": "Relation with other dramas",
+              "name": "xdrama"
+            },
+            "content": [
+              {
+                "ID": "151",
+                "level": 3,
+                "type": "Element",
+                "attributes": {
+                  "CardinalityMin": "0",
+                  "label": "Type of remark",
+                  "name": "xdrama_type",
+                  "ValueScheme": [
+                    [
+                      {
+                        "label": "Translation",
+                        "value": "translation"
+                      },
+                      {
+                        "label": "Adaptation",
+                        "value": "adaptation"
+                      }
+                    ]
+                  ]
+                }
+                
+              },
+              {
+                "ID": "152",
+                "level": 3,
+                "type": "Element",
+                "attributes": {
+                  "CardinalityMin": "0",
+                  "label": "Drama IS",
+                  "name": "xdrama_dramaid",
+                  "ValueScheme": "string"
+                }
+              }
+            ]
+        }        
+          ,
         {
             "ID": "60",
             "level": 2,
@@ -361,8 +444,6 @@
               }
               ]
           },
-
-
         {
           "ID": "102",
           "level": 2,
@@ -643,7 +724,56 @@
               ]
             }
           ]
-        }
+        },
+        {
+            "ID": "200",
+            "level": 2,
+            "type": "Component",
+            "attributes": {
+              "CardinalityMin": "1",
+              "label": "Performance",
+              "name": "performance"
+            },
+            "content": [
+              {
+                "ID": "209",
+                "level": 3,
+                "type": "Element",
+                "attributes": {
+                  "CardinalityMin": "1",
+                  "label": "Number",
+                  "name": "performance_number",
+                  "ValueScheme": "string"
+                }
+              },
+              {
+                "ID": "210",
+                "level": 3,
+                "type": "Element",
+                "attributes": {
+                  "CardinalityMin": "0",
+                  "label": "Date",
+                  "width": 60,
+                  "name": "performance_date",
+                  "ValueScheme": "string",
+                  "duplicate": "True"
+                }
+              },
+              {
+                "ID": "211",
+                "level": 3,
+                "type": "Element",
+                "attributes": {
+                  "CardinalityMin": "0",
+                  "label": "Place",
+                  "width": 60,
+                  "name": "performance_place",
+                  "ValueScheme": "string"
+                }
+              }
+            ]
+          }
+        
       ]
     }
   ]
