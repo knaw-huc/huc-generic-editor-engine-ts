@@ -395,7 +395,10 @@ var FormBuilder = /** @class */ (function () {
         switch (type) {
             case 'multiple':
                 control = document.createElement('textarea');
-                control.setAttribute('rows', this.setInputFieldHeigth(element.attributes.heigth));
+                // console.log(element);
+
+                console.log(element.attributes.heigth);
+                control.setAttribute('rows', this.setInputFieldHeigth(element.attributes.height));
                 control.setAttribute('cols', this.setInputFieldWidth(element.attributes.width));
                 control.setAttribute('data-reset-value', 'area');
                 control.setAttribute('id', element.ID);

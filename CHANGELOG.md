@@ -1,3 +1,8 @@
+## 1-4-2020
+
+* completed first version of Translatin example
+* bugfix with height (heigth)
+
 ## 25-3-2020
 
 * added Translatin.json file as an example
