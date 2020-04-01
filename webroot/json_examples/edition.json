@@ -1,0 +1,178 @@
+{
+    "ID": "105",
+    "level": 2,
+    "type": "Component",
+    "attributes": {
+        "CardinalityMin": "1",
+        "label": "Edition",
+        "name": "edition"
+    },
+    "content": [
+        {
+            "ID": "15",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "1",
+                "label": "Order (1,2)",
+                "width": 60,
+                "name": "edition_order",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "16",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "1",
+                "label": "Page title",
+                "width": 60,
+                "name": "edition_page_title",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "17",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Element after text",
+                "width": 60,
+                "height": 8,
+                "inputField": "multiple",
+                "name": "edition_after_text",
+                "ValueScheme": "string",
+                "duplicate": "True"
+            }
+        },
+        {
+            "ID": "18",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Editor",
+                "width": 60,
+                "name": "edition_order",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "19",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Affiliation",
+                "width": 60,
+                "name": "edition_affiliation",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "20",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Date",
+                "width": 60,
+                "name": "edition_date",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "21",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Place",
+                "width": 60,
+                "name": "edition_place",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "22",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Publisher",
+                "width": 60,
+                "name": "edition_publisher",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "30",
+            "level": 2,
+            "type": "Component",
+            "attributes": {
+                "CardinalityMin": "1",
+                "label": "Copy of Edition",
+                "name": "copy"
+            },
+            "content": [
+                {
+                    "ID": "32",
+                    "level": 3,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "label": "Annotations",
+                        "name": "copy_annotations",
+                        "ValueScheme": [
+                            [
+                                {
+                                    "label": "Yes",
+                                    "value": "yes"
+                                },
+                                {
+                                    "label": "No",
+                                    "value": "no"
+                                }
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "ID": "33",
+                    "level": 3,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "label": "Provenance",
+                        "name": "copy_provenance",
+                        "ValueScheme": "string"
+                    }
+                },
+                {
+                    "ID": "34",
+                    "level": 3,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "label": "Shelfnumber",
+                        "name": "copy_shelfnumber",
+                        "ValueScheme": "string"
+                    }
+                },
+                {
+                    "ID": "35",
+                    "level": 3,
+                    "type": "Element",
+                    "attributes": {
+                        "CardinalityMin": "0",
+                        "label": "Hyperlink",
+                        "name": "copy_hyperlink",
+                        "ValueScheme": "string"
+                    }
+                }
+            ]
+        }
+    ]
+}

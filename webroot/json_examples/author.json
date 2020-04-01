@@ -1,0 +1,103 @@
+{
+    "ID": "102",
+    "level": 2,
+    "type": "Component",
+    "attributes": {
+        "CardinalityMin": "1",
+        "label": "Author / Person",
+        "name": "person"
+    },
+    "content": [
+        {
+            "ID": "9",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "1",
+                "label": "Name",
+                "name": "person_name",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "10",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Alias",
+                "width": 60,
+                "name": "person_alias",
+                "ValueScheme": "string",
+                "duplicate": "True"
+            }
+        },
+        {
+            "ID": "11",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Anonymous",
+                "width": 60,
+                "name": "person_anonymous",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "12",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "label": "Relation type",
+                "width": 60,
+                "name": "person_relationType",
+                "ValueScheme": [
+                    [
+                        {
+                            "label": "Author",
+                            "value": "author"
+                        },
+                        {
+                            "label": "Preface to",
+                            "value": "preface_to"
+                        },
+                        {
+                            "label": "Dedicated to",
+                            "value": "dedicated_to"
+                        },
+                        {
+                            "label": "Laudatory Poems by",
+                            "value": "laudatory_poems_by"
+                        }
+                    ]
+                ],
+                "initialOrder": 37,
+                "duplicate": "True"
+            }
+        },
+        {
+            "ID": "13",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "label": "data ",
+                "width": 60,
+                "name": "person_data",
+                "ValueScheme": "string"
+            }
+        },
+        {
+            "ID": "14",
+            "level": 3,
+            "type": "Element",
+            "attributes": {
+                "CardinalityMin": "0",
+                "label": "Professon ",
+                "width": 60,
+                "name": "person_profession",
+                "ValueScheme": "string"
+            }
+        }
+    ]
+}

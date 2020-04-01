@@ -25,6 +25,8 @@ For a standalone-version without server: consult and test standalone.html
 
     <script>
             let serverurl = "http://localhost:8888/server.php";
+            // let serverurl = "http://localhost:3010/";
+
             fetch(serverurl).then(function (response) {
             response.json().then(function (json) {
                 $('document').ready(function () {
